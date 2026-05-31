@@ -9,9 +9,5 @@ cask "callcapture" do
 
   depends_on macos: ">= :sonoma"
 
-  # Developer ID-signed; notarization pending an Apple notary backlog. Skip the
-  # quarantine gate so installs run cleanly until a notarized build ships.
-  no_quarantine true
-
   app "CallCapture.app"
 end
